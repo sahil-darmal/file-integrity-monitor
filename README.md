@@ -108,8 +108,8 @@ A hash is saved only one time. If the same hash is already in the file, it is no
 
 ## What I want to add next
 
-- Find renamed files. If the hash is same but the file name is different, show it as RENAMED instead of DELETED and NEW.
-- Check a whole folder in one run.
+- Find renamed files. If the hash is same but the file name is different, show it as RENAMED instead of DELETED and NEW
+- Check a whole folder in one run
 
 ## Note
 
