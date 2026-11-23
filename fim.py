@@ -14,7 +14,7 @@ CHUNK = 65536
 LABELS = {"md5": "MD5", "sha1": "SHA-1", "sha256": "SHA-256"}
 
 
-# ---------- Step 1: get the file path ----------
+#  get the file path
 def pick_file_popup():
     try:
         import tkinter as tk
@@ -45,7 +45,7 @@ def get_path():
     return os.path.abspath(p)
 
 
-# ---------- Step 2: calculate the hashes and save ----------
+# calculate the hashes and save 
 def compute_hashes(path):
     # Read file one time and compute all three hashes
     md5, sha1, sha256 = hashlib.md5(), hashlib.sha1(), hashlib.sha256()
@@ -71,7 +71,7 @@ def save_baseline(data):
         json.dump(data, f, indent=2)
 
 
-# ---------- Step 3: save everything in fim_iocs.txt ----------
+# save everything in fim_iocs.txt
 def read_saved_hashes():
     """Read the hash values already in fim_iocs.txt (ignore the label)."""
     saved = set()
